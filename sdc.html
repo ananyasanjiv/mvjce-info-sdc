@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<header><title>Software Development Club</title></header>
+<body style="background-color: #e3e1e1df;">
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: azure;
+        }
+        
+        
+
+        /* Style for marquee */
+        .scrolling-text {
+            font-size: 15px;
+            font-weight: bold;
+            color: darkblue;
+        }
+
+        /* Style for form */
+        .form-container {
+            margin-top: 30px;
+            padding: 50px;
+            background-color: #f4f4f4;
+            border: 1px solid black;
+            width: 40%;
+        }
+
+        .form-container label {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .form-container input, .form-container select, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .form-container textarea {
+            height: 60px;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <div style="background-color: rgb(211, 114, 79);">
+        <h1><center>Software Development Club</center></h1>
+    </div>
+
+    <div style="font-size: 20px;">
+        <p>The Software Development Club was Started in 2016. The motive of Software Development Club was to impart to students the importance of coding, developing applications and knowing about the various design tools and desktop computing techniques used in the industry currently. 
+            The knowledge of recent technology and services used in application development is also roofed in the club.</p>
+        <p>The applications developed in the club include Kiosk for MVJCE (MVJ Way Finder), MVJ Student Notice Board (A Broadcast Application), MVJ Library Book Requisition Software, leave Automation Software and Proctorial Automation System.</p>
+    </div><br>
+
+    <h3><center>Table of Events</center></h3>
+    
+    <marquee class="scrolling-text" behavior="scroll" direction="left" scrollamount="5">
+        Upcoming Events: Hackathon on 25th Oct 2024 | Python Workshop on 15th Nov 2024 | CodeFest on 20th Dec 2024 
+    </marquee>
+
+    <table style="width: 80%;">
+        <tr>
+            <th>S.No</th>
+            <th>Academic Year</th>
+            <th>Name of the Event </th>
+            <th>Date</th>
+            <th>Number of
+                students
+                participated</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2020-2021 </td>
+            <td>Ideation Challenge</td>
+            <td>12th Sept 2020</td>
+            <td>46</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2019-2020 </td>
+            <td>UI/UX Workshop</td>
+            <td>13th March 2020 </td>
+            <td>70</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>2019-2020</td>
+            <td>PyCoder-Python Coding Contest</td>
+            <td>19th Oct 2020</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>2019-2020</td>
+            <td>2-day Workshop on PHP & Adobe XD</td>
+            <td>20th & 21st Sep 2020</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>2018-2019</td>
+            <td>Datathon</td>
+            <td>1st March 2020</td>
+            <td>53</td>
+        </tr>
+    </table>
+
+    <!-- Suggestion/Enquiry Form -->
+    <div class="form-container">
+        <h3><center>Suggestion/Enquiry Form</center></h3>
+        <form action="/submit_suggestion" method="POST">
+            <label for="usn">USN:</label>
+            <input type="text" id="usn" name="usn" placeholder="Enter your USN" required>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="branch">Branch:</label>
+            <select id="branch" name="branch" required>
+                <option value="cse">Computer Science Engineering</option>
+                <option value="ece">Electronics and Communication Engineering</option>
+                <option value="eee">Electrical and Electronics Engineering</option>
+                <option value="mech">Mechanical Engineering</option>
+                <option value="civil">Civil Engineering</option>
+            </select>
+
+            <label for="query">Query/Suggestion:</label>
+            <textarea id="query" name="query" placeholder="Write your query or suggestion here" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
